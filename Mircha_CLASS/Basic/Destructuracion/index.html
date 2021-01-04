@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Destructutracion es una forma de crear variable  mas flexibles con buenas practicas.
+        let colores = ["rojo","negro","amarillo","azul"]
+        let [color1,color2,color3] = colores
+        console.log(color1)
+
+        //Con Objetos
+        let Compute = {
+            model: "Dell",
+            core:4,
+            ram:"4GB",
+            store:"255GB"
+        }
+
+        console.log(Compute)
+
+        let {model,core,ram,store} = Compute
+
+        console.log(model)
+        console.log(core)
+
+        //Ojo si es un Array la forma es con
+        // let [] = el_array
+
+        //Ojo si es un Objeto la forma es con y debe de tener el nombre del objeto.
+        //let {} = el_objeto
+
+    </script>
+
+
+</body>
+</html>

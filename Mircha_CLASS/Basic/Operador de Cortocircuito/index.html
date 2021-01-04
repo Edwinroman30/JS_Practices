@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+        OR evalua que el operador de la izquierda, sí es verdadero 
+        toma el valor de la izquierda si es falso toma el valor de 
+        la derecha.
+        */
+
+        const Testing = (name) =>{
+            valor = name || "NOBODY"
+            console.log("Hola " + valor)
+        }
+
+
+        Testing("Albert")
+
+        /*
+        AND - cuando el valor de la izquierda en la expresión siempre
+        pueda validar a false, es el valor que se cargará por defecto.  
+        */
+
+        const Two_testing_function = (age) =>{
+            age = age || 1000
+            return age
+        }
+
+        console.log(Two_testing_function(23))
+
+
+
+
+    </script>
+
+
+</body>
+</html>

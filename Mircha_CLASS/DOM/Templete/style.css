@@ -1,0 +1,33 @@
+.title{
+    font-size: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+
+.grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item{
+   position: relative;
+   border: 2px solid black;
+}
+
+.grid-item figcaption{
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background:#333;
+    color: aliceblue;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

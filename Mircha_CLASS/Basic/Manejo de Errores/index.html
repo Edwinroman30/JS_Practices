@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        try {
+           let correo = prompt("Inseta un correo:")
+         
+                if(correo.indexOf("@") == -1){
+                    throw new Error("Joder esto no es un correo falta la @")
+                }
+                else{
+                    console.log("Todo esta bien")
+                }
+                 
+                
+        } catch (error) {
+            console.log(error)
+        }
+
+        
+
+
+
+    </script>
+
+
+</body>
+</html>

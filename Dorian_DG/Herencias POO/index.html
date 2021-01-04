@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>
+        
+        class Auto{
+            constructor(marca,ruedas,color,estado){
+                this.marca = marca;
+                this.ruedas = ruedas;
+                this.color = color;
+                this.estado = estado;
+            }
+
+            On(){
+                this.estado = true;
+                console.log("Este auto esta encendido")
+            }
+            Of(){
+                this.estado = false
+                console.log("Este auto esta apagado")
+            }
+
+            //Propiedad
+            set set_ruedas(value){
+                if(value ===0 || value>8){
+                    this.ruedas = "Error";
+                }
+                else{
+                    this.ruedas = value
+                }
+            }
+
+            get get_estado(){
+                if(this.estado){
+                    return "Encedido, Ruuun....."
+                }else{
+                    return "Apagado, hhhhh......"
+                }
+            }
+
+
+        }
+
+        class Camion extends Auto
+        {
+            constructor(marca,ruedas,color,estado,ntriller)
+            {   
+                //super() es el base: de C#
+                super(marca,ruedas,color,estado)
+
+                this.ntriller = ntriller;
+
+            }
+
+            On(){
+                this.estado = true
+                console.log("Este Camion esta encendido")
+            }
+
+            Info(){
+                console.log(`${this.marca}, numero de ruedas ${this.ruedas}, color ${this.color}, estado ${this.estado} y numero de triller ${this.ntriller}`);
+            }
+
+        }
+
+
+        let Toyota = new Auto("Toyota Cambry",4,"Blanco",false)
+        Toyota.On()
+        console.log(Toyota.get_estado)
+
+        //Usando porpiedades
+        Toyota.set_ruedas = 0
+
+        console.log(Toyota.ruedas)
+        
+        const Bulltrack = new Camion("Jordan",6,"Rojo",false,3)
+        Bulltrack.On()
+        Bulltrack.Info();
+        console.log(Bulltrack)
+        </script>
+    
+
+</body>
+</html>

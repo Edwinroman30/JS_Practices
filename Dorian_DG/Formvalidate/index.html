@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simples validaciones:</title>
+</head>
+<body>
+
+        <style>
+            #form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                background-color: lightslategrey;
+            }
+            h2{
+                text-align: center;
+            }
+            input{
+                width: 70%;
+                border: 2px solid black;
+                padding: 5px;
+                border-radius: 20px;
+            }
+        </style>
+
+
+    <h2>Simples validaciones:</h2>
+
+    <form action="#" method="get" id="form">
+        <label>Name:</label>
+        <input type="text" name="name" id="inp-name">
+        
+        
+        <label>Last Name:</label>
+        <input type="text" name="lastname" id="inp-lastname">
+        
+       
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="inp-age">
+
+       
+        <input type="checkbox" name="term" id="inp_term"> <label for="#">Accept our terms</label>
+
+
+        <button id="btn" type="submit" >Send</button>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>

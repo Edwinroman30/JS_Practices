@@ -1,0 +1,4 @@
+^[0-9]{3}-[0-9]{7}-[0-9]{1}$ - PARA UNA CEDULA.
+
+/^[a-z]{3,11}\s?[a-z]{3,11}?$/mgi - Para validar un nombre con segundo nombre tambien.
+

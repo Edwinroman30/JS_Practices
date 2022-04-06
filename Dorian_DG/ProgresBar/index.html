@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proggress Bar</title>
+
+    <style>
+        
+        :root{
+            --bar_width: 0;
+        }
+
+        .bar_container{
+            width: 200px;
+            height: 20px;
+            background-color: cornflowerblue;
+            margin-bottom: 10px;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .bar_proggress{
+            width: 0;
+            height: 20px;
+            background-color: whitesmoke;
+            position: absolute;
+            
+        }
+
+        .barra{
+            width: 200px;
+            height: 20px;
+            background-color: cornflowerblue;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .barra::after{
+            width: var(--bar_width);
+            height: 20px;
+            background-color: whitesmoke;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <input type="file" id="input_file" multiple>
+    <h5>Bar-Proggress</h5>
+    <div class="bar_container" id="bar_container">
+        <span class="bar_proggress" id="bar_proggress"></span>
+    </div>
+
+    <h5>Bar-Proggress -SIN ELEMENTO SPAN-</h5>
+    <div class="barra"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
